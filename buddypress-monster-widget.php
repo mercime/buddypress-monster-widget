@@ -5,8 +5,8 @@
  * Description:       A widget that allows for quick and easy testing of multiple BuddyPress widgets. Not intended for production sites.
  * Version:           0.1
  * License:           GPLv2 or later
- * Author:            mercime
- * Author URI:        https://profiles.wordpress.org/mercime
+ * Author:            mercime, imath
+ * Author URI:        http://buddypress.org
  * Text Domain:       buddypress-monster-widget
  * load_plugin_textdomain( 'buddypress-monster-widget' );
  */

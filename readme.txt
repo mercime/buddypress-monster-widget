@@ -1,6 +1,6 @@
 ===BuddyPress Monster Widget===
 
-Contributors: mercime
+Contributors: mercime, imath
 Donate link: http://www.redcross.org/
 Tags: buddypress, widget, theme development 
 License: GPLv2 or later
