@@ -104,12 +104,6 @@ class BuddyPress_Monster_Widget extends WP_Widget {
 	public function get_widget_config() {
 		$widgets = array(
 
-			array( 'BP_Blogs_Recent_Posts_Widget', array(
-				'title'          => __( 'BuddyPress Recent Networkwide Posts', 'buddypress-monster-widget' ),
-				'max_posts'      => 10,
-				'link_title'     => true,
-			) ),
-
 			array( 'BP_Core_Login_Widget', array(
 				'title'          => __( 'BuddyPress Login', 'buddypress-monster-widget' ),
 			) ),
@@ -131,25 +125,43 @@ class BuddyPress_Monster_Widget extends WP_Widget {
 				'max_members'    => 15,
 			) ),
 
-			array( 'BP_Core_Friends_Widget', array(
+		);
+	
+		// Be sure the blogs component is active
+		if ( bp_is_active( 'blogs' ) ) {
+			$widgets[] = array( 'BP_Blogs_Recent_Posts_Widget', array(
+				'title'          => __( 'BuddyPress Recent Networkwide Posts', 'buddypress-monster-widget' ),
+				'max_posts'      => 10,
+				'link_title'     => true,
+			) );
+		}
+
+		// Be sure the friends component is active
+		if ( bp_is_active( 'friends' ) ) {
+			$widgets[] = array( 'BP_Core_Friends_Widget', array(
 				'title'          => __( 'BuddyPress Friends', 'buddypress-monster-widget' ),
 				'max_friends'    => 5,
 				'friend_default' => 'active',
 				'link_title'     => false
-			) ),
+			) );
+		}
 
-			array( 'BP_Groups_Widget', array(
+		// Be sure the groups component is active
+		if ( bp_is_active( 'groups' ) ) {
+			$widgets[] = array( 'BP_Groups_Widget', array(
 				'title'          => __( 'BuddyPress Groups', 'buddypress-monster-widget' ),
 				'max_groups'     => 5,
 				'group_default'  => 'active',
 				'link_title'     => false,
-			) ),
+			) );
+		}
 
-			array( 'BP_Messages_Sitewide_Notices_Widget', array(
+		// Be sure the message component is active
+		if ( bp_is_active( 'messages' ) ) {
+			$widgets[] = array( 'BP_Messages_Sitewide_Notices_Widget', array(
 				'title'          => __( 'BuddyPress Sitewide Notices', 'buddypress-monster-widget' ),
-			) ),
-
-		);
+			) );
+		}
 
 		return apply_filters( 'buddypress-monster-widget-config', $widgets );
 
