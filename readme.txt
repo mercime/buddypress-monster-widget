@@ -58,4 +58,6 @@ None at this time.
 * Original Release.
 
 ==Upgrade Notice==
-*
+
+= v0.2 - October 21, 2014 =
+* Correct hook bp_widgets_init.
