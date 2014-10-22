@@ -3,7 +3,7 @@
  * Plugin Name:       BuddyPress Monster Widget
  * Plugin URI:        http://wordpress.org/extend/plugins/buddypress-monster/widget/
  * Description:       A widget that allows for quick and easy testing of multiple BuddyPress widgets. Not intended for production sites.
- * Version:           0.1
+ * Version:           0.2
  * License:           GPLv2 or later
  * Author:            mercime, imath
  * Author URI:        http://buddypress.org
@@ -16,12 +16,12 @@
  *
  * Hooks into the widgets_init action.
  *
- * @since 0.1
+ * @since 0.2
  */
 function register_buddypress_monster_widget() {
 	register_widget( 'BuddyPress_Monster_Widget' );
 }
-add_action( 'widgets_init', 'register_buddypress_monster_widget' );
+add_action( 'bp_widgets_init', 'register_buddypress_monster_widget' );
 
 /**
  * BuddyPress Monster Widget.

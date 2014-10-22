@@ -4,7 +4,7 @@ Contributors: mercime, imath
 Donate link: http://www.redcross.org/
 Tags: buddypress, widget, theme development 
 License: GPLv2 or later
-Requires at least: WP 3.9, BP 2.1
+Requires at least: WP 4.0, BP 2.1
 Tested up to: WP/BP trunk
 Stable tag: trunk
 
@@ -15,14 +15,14 @@ Provides a quick and easy method of adding all BuddyPress core widgets to a side
 Based on Monster Widget, this plugin consolidates all BuddyPress core widgets into a single widget enabling theme developers to create multiple instances with ease. It has been created to save time during theme development and review by minimizing the steps needed to populate a sidebar with widgets. This widget is not designed for use in production.
 
 BuddyPress widgets included:
-* Log in 
-* Members
-* Who's Online
-* Recently Active
-* Friends
-* Groups
-* Sitewide Messages
-* Recent Networkwide Posts
+*   Log in 
+*   Members
+*   Who's Online
+*   Recently Active
+*   Friends
+*   Groups
+*   Sitewide Messages
+*   Recent Networkwide Posts
 
 ==Installation==
 
