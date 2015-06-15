@@ -128,7 +128,7 @@ class BuddyPress_Monster_Widget extends WP_Widget {
 		);
 	
 		// Be sure the blogs component is active
-		if ( bp_is_active( 'blogs' ) ) {
+		if ( bp_is_active( 'blogs' ) && is_multisite() ) {
 			$widgets[] = array( 'BP_Blogs_Recent_Posts_Widget', array(
 				'title'          => __( 'BuddyPress Recent Networkwide Posts', 'buddypress-monster-widget' ),
 				'max_posts'      => 10,
