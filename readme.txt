@@ -5,7 +5,7 @@ Donate link: http://www.redcross.org/
 Tags: buddypress, widget, theme development 
 License: GPLv2 or later
 Requires at least: WP 3.9, BuddyPress 2.1.1
-Tested up to: WP 4.2.2, BuddyPress 2.3.1
+Tested up to: WP 4.5.3, BuddyPress 2.6.1.1
 Stable tag: trunk
 
 Provides a quick and easy method of adding all BuddyPress core widgets to a sidebar for testing purposes.
